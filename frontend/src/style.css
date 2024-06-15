@@ -1,0 +1,25 @@
+.body-container {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #root {
+    width: 100%;
+  }
+  body {
+    min-height: 100vh;
+    -ms-overflow-style: none;
+    background-color: #3aafa9;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  
