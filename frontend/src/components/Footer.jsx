@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-copyright">
-          <div> © 2020, All rights reserved. </div>
+          <div> © 2024, All rights reserved. </div>
           <div style={{"width":"200px"}}>
 
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
