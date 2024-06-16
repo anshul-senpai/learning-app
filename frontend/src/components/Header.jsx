@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
   }
 
   @media screen and (max-width: 768px) {
-    background-color: ${(props) => (props.isToggleOpen ? "#3aafa9" : "#9cd7d4" )};
+    background-color: ${(props) => (props.istoggleopen ? "#3aafa9" : "#9cd7d4" )};
     flex-direction: column;
     align-items: flex-start;
     .menuToggleBtn {
@@ -57,7 +57,7 @@ const NavManu = styled.ul`
     font-size:17px;
   }
   @media screen and (max-width: 768px) {
-    display: ${(props) => (props.isToggleOpen ? "block" : "none" )};
+    display: ${(props) => (props.istoggleopen ? "block" : "none" )};
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -66,10 +66,10 @@ const NavManu = styled.ul`
 `;
 
 const Header = () => {
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const [istoggleopen, setistoggleopen] = useState(false);
 
   const handleToggleOpen = () => {
-    setIsToggleOpen(!isToggleOpen);
+    setistoggleopen(!istoggleopen);
   };
   return (
     <>
@@ -80,7 +80,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <NavManu isToggleOpen={isToggleOpen}>
+        <NavManu istoggleopen={istoggleopen}>
           <li>
             <Link to={"/Home"} className="nav-menu-list">
               Home
